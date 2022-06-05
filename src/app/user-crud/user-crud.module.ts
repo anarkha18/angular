@@ -12,7 +12,6 @@ import { DisplaydataComponent } from './displaydata/displaydata.component';
 import { MatTableModule } from '@angular/material/table';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
-import { MatFormFieldModule } from '@angular/material/form-field';
 
 
 
@@ -33,7 +32,6 @@ import { MatFormFieldModule } from '@angular/material/form-field';
     MatTableModule,
     MatPaginatorModule,
     MatSortModule,
-    MatFormFieldModule
 
   ],
   exports: [

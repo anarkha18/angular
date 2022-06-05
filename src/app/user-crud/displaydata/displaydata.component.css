@@ -1,0 +1,23 @@
+table {
+    width: 100%;
+}
+
+
+th {
+    color: #ffff;
+    text-align: center !important;
+    font-size: 16px;
+    background-color: rgb(146, 28, 146);
+}
+
+.search {
+    width: 30%;
+}
+
+.pg {
+    width: 100%;
+}
+
+.action {
+    width: 20px;
+}

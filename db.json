@@ -1,13 +1,13 @@
 {
   "users": [
     {
-      "name": "Anar",
-      "email": "absg@ess.fhj",
+      "name": "Anargha",
+      "email": "anarghasanon04@gmail.com",
       "phone": "3456890431",
       "gender": "female",
       "department": "2",
-      "dob": "2022-06-01",
-      "course": "pythom",
+      "dob": "2022-06-15",
+      "course": "Python",
       "id": 7
     },
     {
@@ -32,22 +32,22 @@
     },
     {
       "name": "Prarthana",
-      "email": "anarghasanon04@gmail.com",
+      "email": "prarthana@gmail.com",
       "phone": "1234567894",
-      "gender": "male",
+      "gender": "female",
       "department": "1",
-      "dob": "2022-06-17",
+      "dob": "2011-06-10",
       "course": "Mechanical",
       "id": 14
     },
     {
-      "name": "Prarthana",
-      "email": "anarghasanon04@gmail.com",
-      "phone": "1234567894",
+      "name": "Anamika",
+      "email": "anamika@gmail.com",
+      "phone": "9987654321",
       "gender": "female",
       "department": "1",
-      "dob": "2022-06-16",
-      "course": "Mechanical",
+      "dob": "2012-06-20",
+      "course": "Angular",
       "id": 15
     }
   ]

@@ -8,7 +8,7 @@ import { ViewdataComponent } from './user-crud/viewdata/viewdata.component';
 const routes: Routes = [
   { path: '', component: UpdateComponent },
   { path: 'viewdata', component: ViewdataComponent },
-  { path: 'viewdata/editdata/:id', component: EditdataComponent },
+  { path: 'displaydata/editdata/:id', component: EditdataComponent },
   { path: 'displaydata', component: DisplaydataComponent }
 ];
 
