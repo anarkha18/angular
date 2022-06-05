@@ -1,0 +1,54 @@
+{
+  "users": [
+    {
+      "name": "Anar",
+      "email": "absg@ess.fhj",
+      "phone": "3456890431",
+      "gender": "female",
+      "department": "2",
+      "dob": "2022-06-01",
+      "course": "pythom",
+      "id": 7
+    },
+    {
+      "name": "Arathy",
+      "email": "aaar@aar.com",
+      "phone": "2345976542",
+      "gender": "female",
+      "department": "3",
+      "dob": "2022-06-09",
+      "course": "Mechanical",
+      "id": 8
+    },
+    {
+      "name": "Prartha",
+      "email": "prarthanasanon@gmail.com",
+      "phone": "1234567890",
+      "gender": "female",
+      "department": "2",
+      "dob": "2022-06-10",
+      "course": "Mechanical",
+      "id": 13
+    },
+    {
+      "name": "Prarthana",
+      "email": "anarghasanon04@gmail.com",
+      "phone": "1234567894",
+      "gender": "male",
+      "department": "1",
+      "dob": "2022-06-17",
+      "course": "Mechanical",
+      "id": 14
+    },
+    {
+      "name": "Prarthana",
+      "email": "anarghasanon04@gmail.com",
+      "phone": "1234567894",
+      "gender": "female",
+      "department": "1",
+      "dob": "2022-06-16",
+      "course": "Mechanical",
+      "id": 15
+    }
+  ]
+}

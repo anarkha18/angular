@@ -1,0 +1,33 @@
+<h1 class="my-3 alert alert-info rounded">Biodata Table</h1>
+<table class="table">
+    <thead>
+        <tr class="table-dark">
+            <th scope="col">Sl No:</th>
+            <th scope="col">Name</th>
+            <th scope="col">Email</th>
+            <th scope="col">Phone</th>
+            <th scope="col">D.O.B</th>
+            <th scope="col">Gender</th>
+            <th scope="col">Department</th>
+            <th scope="col">Course</th>
+            <th scope="col">Action</th>
+        </tr>
+    </thead>
+    <tbody *ngFor="let user of users">
+        <tr>
+            <td>{{user.id}}</td>
+            <td>{{user.name}}</td>
+            <td>{{user.email}}</td>
+            <td>{{user.phone}}</td>
+            <td>{{user.dob}}</td>
+            <td>{{user.gender}}</td>
+            <td>{{user.department}}</td>
+            <td>{{user.course}}</td>
+            <td>
+                <a routerLink="/viewdata/editdata/{{user.id}}"><button class="mx-1" mat-raised-button
+                        color="accent">Edit</button></a>
+                <button class="mx-2" mat-raised-button color="warn" (click)="delemployee(user.id);">Delete</button>
+            </td>
+        </tr>
+    </tbody>
+</table>

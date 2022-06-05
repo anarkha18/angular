@@ -1,0 +1,66 @@
+<h1 class="my-2 alert alert-info rounded">Student Biodata</h1>
+<div class="formdiv my-4">
+    <form #bioform="ngForm" (ngSubmit)="adduser(); bioform.reset()">
+        <div class="mb-3">
+            <label for="name" class="form-label">Full Name</label>
+            <input type="text" class="form-control mb-1" #name="ngModel" pattern="[a-zA-Z]+$" minlength="3"
+                maxlength="20" required name="name" placeholder="Enter your name" [(ngModel)]="res.name">
+            <span *ngIf="name.invalid && name.touched" style="color: red;">Enter a Valid Input</span>
+            <span *ngIf="name?.errors?.['minlength']" style="color: red;">Name is too short</span>
+        </div>
+        <div class="mb-3">
+            <label for="email" class="form-label">Email address</label>
+            <input type="text" class="form-control mb-1" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"
+                #email="ngModel" required name="email" placeholder="Enter your email" [(ngModel)]="res.email">
+            <span *ngIf="email.invalid && email.touched" style="color: red;">Enter a Valid Email</span>
+            <span *ngIf="email?.errors?.['pattern']" style="color: red;">Not a valid Email</span>
+        </div>
+        <div class="mb-3">
+            <label for="phone" class="form-label">Phone</label>
+            <input type="text" class="form-control mb-1" pattern="[0-9]{10}" #phone="ngModel" required name="phone"
+                placeholder="Enter your phone" [(ngModel)]="res.phone">
+            <span *ngIf="phone.invalid && phone.touched" style="color: red;">Enter a Valid Input</span>
+            <span *ngIf="phone?.errors?.['pattern']" style=" color: red;">Enter 10 Digit Number</span>
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Gender</label>
+            <div class="form-control">
+                <input class="form-check-input" #male="ngModel" type="radio" value="male" name="gender"
+                    [(ngModel)]="res.gender" required>
+                <label for="male" class="form-label radio-inline mx-2">Male </label>
+                <input class="form-check-input" #female="ngModel" type="radio" value="female" name="gender"
+                    [(ngModel)]="res.gender" required>
+                <label for="female" class="form-label radio-inline mx-2">Female </label>
+            </div>
+        </div>
+        <div class="mb-3">
+            <label class="form-label" for="department">Department</label>
+            <select class="form-select" id="department" name="department" #department="ngModel"
+                [(ngModel)]="res.department" required>
+                <option *ngFor="let dept of departments" [value]="dept.id">
+                    {{dept.name}}
+                </option>
+                <span *ngIf="department.invalid && department.touched" style="color: red;">Enter a Valid Input</span>
+                <!-- <select class="form-select" id="department" name="department" [(ngModel)]="ngSelect" required> -->
+                <!-- <option value="1">Engineering</option>
+                <option value="2">Commerce</option>
+                <option value="3">Medicine</option>
+                <option value="4">Literature</option> -->
+            </select>
+
+        </div>
+        <div class="mb-3">
+            <label for="picker" class="form-label">Date of Birth</label>
+            <input type="date" class="form-control" name="dob" [(ngModel)]="res.dob" required>
+        </div>
+        <div class="mb-3">
+            <label for="course" class="form-label">Course</label>
+            <input type="text" class="form-control" pattern="[a-zA-Z]+$" minlength="3" maxlength="10" #course="ngModel"
+                required name="course" placeholder="Enter the course" [(ngModel)]="res.course">
+            <span *ngIf="course.invalid && course.touched" style="color: red;">Enter a Valid Input</span>
+            <span *ngIf="course?.errors?.['pattern']" style="color: red;">Enter a Valid Course</span>
+        </div>
+        <button class="my-1" mat-raised-button color="primary" [disabled]="!bioform.valid">Submit</button>
+    </form>
+</div>
+<!-- {{bioform.value | json}} -->
