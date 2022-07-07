@@ -6,7 +6,7 @@ import { Employee } from '../models/employee.model';
   providedIn: 'root'
 })
 export class ApiService {
-  // url = 'http://localhost:3000/users'
+  // url = 'http://localhost:3000/users/'
   url = 'https://djangoapi98.herokuapp.com/backend/users';
   constructor(private http: HttpClient) { }
 
