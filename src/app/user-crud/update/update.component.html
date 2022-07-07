@@ -37,7 +37,7 @@
             <label class="form-label" for="department">Department</label>
             <select class="form-select" id="department" name="department" #department="ngModel"
                 [(ngModel)]="res.department" required>
-                <option *ngFor="let dept of departments" [value]="dept.id">
+                <option *ngFor="let dept of departments" [value]="name">
                     {{dept.name}}
                 </option>
                 <span *ngIf="department.invalid && department.touched" style="color: red;">Enter a Valid Input</span>
